@@ -26,13 +26,13 @@ const PrayerTimes = () => {
     // Fetch location by IP and call fetchPrayerTimes with coordinates
     const fetchLocationByIP = useCallback(async () => {
         try {
-            const response = await fetch("http://ip-api.com/json/");
+            const response = await fetch("https://ipapi.co/json/");
             const data = await response.json();
             setCity(data.city);
-            setRegion(data.regionName);
+            setRegion(data.region);
 
-            const { lat: latitude, lon: longitude } = data;
-            fetchPrayerTimes(latitude, longitude);
+            const { latitude: lat, longitude: long } = data;
+            fetchPrayerTimes(lat, long);
         } catch (error) {
             console.error("Error fetching IP location:", error);
         }
