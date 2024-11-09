@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/8722e195-9677-45aa-8596-d02bbc5c7551/resourceGroups/johnwick33d/providers/Microsoft.Web/sites/prayer-times",
+    "appService.deploySubpath": "."
 }
