@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 import React from 'react';
 
-test('renders learn react link', () => {
+test('renders Islamic Prayer Times', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = screen.getByText(/Islamic Prayer Times/i);
+  expect(titleElement).toBeInTheDocument();
 });
