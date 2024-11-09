@@ -51,6 +51,13 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
+
+      - name: Login to Azure using OIDC 
+        uses: azure/login@v2 
+        with: 
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }} 
+          client-id: ${{ secrets.AZURE_CLIENT_ID }} 
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
