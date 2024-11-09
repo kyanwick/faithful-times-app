@@ -21,5 +21,5 @@ This project is licensed under the MIT License.
 ## Acknowledgements
 
 - ([Aladhan API](https://aladhan.com/prayer-times-api)): For providing the prayer times data. 
-- ([IP-API](https://ip-api.com/docs)): For a fast, accurate, and reliable service. 
+- ([IPAPI](https://ipapi.co/json/)): For a fast, accurate, and reliable service. 
 - React: For an amazing JavaScript library for building UI.

@@ -8,7 +8,7 @@ const PrayerTimes = () => {
     // calling Aladhan API and input coordinates to fetch time 
     const fetchPrayerTimes = useCallback(async (latitude, longitude) => {
         const response = await fetch(
-            `http://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`
+            `https://api.aladhan.com/v1/timings?latitude=${latitude}&longitude=${longitude}&method=2`
         );
         const data = await response.json();
 
